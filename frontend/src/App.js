@@ -159,7 +159,7 @@ function EngagementPage() {
   }, []);
 
   if (loading) {
-    return <div className="loading">Loading engagement models...</div>;
+    return <div className="loading">Loading Engagement Models...</div>;
   }
 
   return (
