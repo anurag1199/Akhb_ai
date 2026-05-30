@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Top 50 CA Firms in India 2026",
+    "slug": "top-50-ca-firms-india-2026",
+    "excerpt": "Comprehensive guide to India's leading Chartered Accountant firms offering audit, tax, and advisory services.",
+    "author": "Rohini Warrier",
+    "date": "2023-12-11",
+    "category": "CA Firms",
+    "image": "/images/ca-firms.jpg",
+    "content": "Chartered Accountant (CA) Firms are businesses that hire certified CA Professionals to check financial records, offer financial reports, manage accounting rules, and deal with taxes. Since GST was introduced in India, the work of CA firms has become more complex and focused. In India, CA firms act as pillars of financial discipline, regulatory compliance, and business advisory, ensuring that companies and individuals navigate the complexities of the economic and legal landscape effectively. Their contribution to corporate governance, economic growth, and financial transparency makes them indispensable to India's economy.",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Understanding Tax Controversy Management",
+    "slug": "understanding-tax-controversy-management",
+    "excerpt": "Best practices for handling tax notices and disputes with expert advisory support.",
+    "author": "AKHB.ai Team",
+    "date": "2024-01-15",
+    "category": "Tax Advisory",
+    "image": "/images/tax-controversy.jpg",
+    "content": "Tax controversy is a critical area where professional guidance makes a significant difference. Whether you receive a notice from tax authorities or face a dispute, having the right expert support can help navigate the process effectively. This article covers the key steps in managing tax controversies, from initial notice analysis to response preparation and representation.",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "GST Compliance: A Complete Guide for Businesses",
+    "slug": "gst-compliance-guide",
+    "excerpt": "Navigate GST compliance requirements with clear strategies and best practices.",
+    "author": "AKHB.ai Team",
+    "date": "2024-02-01",
+    "category": "GST Advisory",
+    "image": "/images/gst-guide.jpg",
+    "content": "Goods and Services Tax (GST) compliance is essential for all businesses in India. This comprehensive guide covers registration, filing, audit, and refund processes to ensure your business remains compliant with GST regulations while optimizing your tax position.",
+    "featured": false
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Entry and Structuring",
+    "description": "Strategic guidance on new market decisions and business structure optimization",
+    "typical_output": "Structure memo",
+    "icon": "🏢"
+  },
+  {
+    "id": 2,
+    "name": "Tax Controversy",
+    "description": "Expert handling of tax notices and disputes with comprehensive response packs",
+    "typical_output": "Response pack",
+    "icon": "⚖️"
+  },
+  {
+    "id": 3,
+    "name": "GST and Indirect Tax",
+    "description": "Compliance support, refund management, and risk mitigation strategies",
+    "typical_output": "Risk and action note",
+    "icon": "📋"
+  },
+  {
+    "id": 4,
+    "name": "Assurance and CFO Support",
+    "description": "Financial reporting discipline with MIS and control planning",
+    "typical_output": "Reporting discipline & MIS plan",
+    "icon": "✅"
+  },
+  {
+    "id": 5,
+    "name": "Forensic and Governance",
+    "description": "Sensitive reviews and findings reports for governance concerns",
+    "typical_output": "Findings report",
+    "icon": "🔍"
+  },
+  {
+    "id": 6,
+    "name": "AI-enabled Workflows",
+    "description": "Speed and consistency through structured analysis and automation",
+    "typical_output": "Structured analysis",
+    "icon": "🤖"
+  }
+]

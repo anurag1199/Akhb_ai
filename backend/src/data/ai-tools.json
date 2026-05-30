@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "NoticeScope",
+    "slug": "noticescrope",
+    "title": "NoticeScope | AI Notice Analysis by AKHB.ai",
+    "meta_description": "Upload tax or regulatory notices to extract deadlines, issues, required documents and first-response action points.",
+    "description": "NoticeScope converts a raw notice into a readable action sheet. It identifies the authority, timeline, issue clusters, data requests and likely follow-up steps so teams can respond quickly and methodically.",
+    "ideal_users": ["Promoters", "Tax teams", "CFO offices", "Compliance heads", "Litigation support teams"],
+    "features": [
+      "Upload notice or paste text",
+      "Extract metadata, deadlines and issues",
+      "Generate issue matrix",
+      "Identify documents required",
+      "Create first-response checklist",
+      "Route for professional review and export"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "DraftDesk",
+    "slug": "draftdesk",
+    "title": "DraftDesk | Structured Draft Preparation by AKHB.ai",
+    "meta_description": "Build disciplined first drafts for notices, internal notes, representation summaries and issue memos under professional review.",
+    "description": "DraftDesk helps teams move from facts to usable structure. It organises chronology, issue framing, evidence references and drafting pathways so professionals begin from a higher-quality first draft.",
+    "ideal_users": ["Tax teams", "Internal legal support", "Finance leadership", "Engagement teams"],
+    "features": [
+      "Upload fact summary and background papers",
+      "Build chronology",
+      "Extract issue statements",
+      "Suggest draft structure",
+      "Insert evidence placeholders",
+      "Review, edit and approve manually"
+    ],
+    "icon": "📝"
+  },
+  {
+    "id": 3,
+    "name": "Refund360",
+    "slug": "refund360",
+    "title": "Refund360 | Refund and Interest Scenario Tool by AKHB.ai",
+    "meta_description": "Model refund and interest scenarios, highlight data gaps and organise support documents before filing or follow-up.",
+    "description": "Refund360 is built for refund-led mandates that require calculation support, status visibility and documentary discipline. It helps users organise claim logic, delay points and tracking requirements.",
+    "ideal_users": ["Finance teams", "Tax managers", "Founders", "GST and direct-tax support teams"],
+    "features": [
+      "Enter dates, amounts and filing events",
+      "Map statutory or process milestones",
+      "Highlight claim dependencies",
+      "Compare scenarios",
+      "Export working note",
+      "Route for engagement-specific review"
+    ],
+    "icon": "💰"
+  },
+  {
+    "id": 4,
+    "name": "Global Entry Navigator",
+    "slug": "global-entry-navigator",
+    "title": "Global Entry Navigator | Cross-Border Structuring by AKHB.ai",
+    "meta_description": "Compare entry structures, tax implications and compliance pathways for India and overseas expansion scenarios.",
+    "description": "Global Entry Navigator helps decision-makers compare structure options before they commit. It turns broad questions into a structured comparison of routes, compliance consequences and operating implications.",
+    "ideal_users": ["Founders", "International businesses", "Strategy teams", "CFOs", "Promoter offices"],
+    "features": [
+      "Enter business facts and market objective",
+      "Select jurisdictions",
+      "Compare structure pathways",
+      "Highlight tax and governance implications",
+      "Generate board-style comparison note",
+      "Review with AKHB team"
+    ],
+    "icon": "🌍"
+  }
+]

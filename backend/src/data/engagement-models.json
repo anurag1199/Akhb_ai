@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "label": "Intro Call",
+    "fee_range": "Unspecified",
+    "best_for": "Initial fit check",
+    "cta": "Request an Engagement",
+    "description": "First conversation to understand your needs and determine if AKHB is the right fit for your mandate."
+  },
+  {
+    "id": 2,
+    "label": "Advisory Sprint",
+    "fee_range": "INR 25k–75k",
+    "best_for": "Defined short mandate",
+    "cta": "Request a Scope Note",
+    "description": "Intensive, time-bound engagement for specific projects requiring rapid turnaround and expert guidance."
+  },
+  {
+    "id": 3,
+    "label": "Monthly Advisory Retainer",
+    "fee_range": "INR 75k–2.5L+",
+    "best_for": "Ongoing founder/CFO support",
+    "cta": "Build a Monthly Engagement",
+    "description": "Sustained advisory relationship providing regular access to AKHB's team for strategic financial and tax decisions."
+  },
+  {
+    "id": 4,
+    "label": "Matter-Based Representation",
+    "fee_range": "Custom by stage",
+    "best_for": "Notice/dispute support",
+    "cta": "Submit Matter Details",
+    "description": "Dedicated representation for specific tax disputes, regulatory notices, and complex transactions."
+  },
+  {
+    "id": 5,
+    "label": "Cross-Border Project",
+    "fee_range": "INR 1.5L+",
+    "best_for": "Structuring or market entry",
+    "cta": "Request Proposal",
+    "description": "Comprehensive support for international expansion, cross-border structuring, and entry strategies."
+  },
+  {
+    "id": 6,
+    "label": "Enterprise / PSU / RFP Mandate",
+    "fee_range": "Custom",
+    "best_for": "Large or formal procurements",
+    "cta": "Submit RFE",
+    "description": "Formal, scoped mandates for large enterprises, public sector undertakings, and RFP-based engagements."
+  }
+]
