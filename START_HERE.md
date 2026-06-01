@@ -18,36 +18,43 @@ A complete, production-ready full-stack web application with:
 
 ## 📋 What's Inside
 
-### Files You'll Actually Use
+### Documentation (Read These!)
 
 ```
-SETUP_GUIDE.md          ← READ THIS FIRST! Complete guide
-QUICKSTART.md           ← 5-minute quick start
-FILE_INDEX.md           ← Where everything is
-README.md               ← Full documentation
-PROJECT_SUMMARY.md      ← Overview
+SETUP_GUIDE.md              ← READ FIRST! Complete setup & troubleshooting
+QUICKSTART.md               ← 5-minute quick start 
+DEPRECATION_WARNINGS.md     ← Explains harmless warning messages
+FILE_INDEX.md               ← Where everything is
+README.md                   ← Full documentation
+PROJECT_SUMMARY.md          ← Feature overview
+```
 
-setup.bat               ← Windows: Run once to install
-setup.sh                ← Mac/Linux: Run once to install
+### Setup Scripts
 
-start-all.bat           ← Windows: Click to start servers
-start-all.sh            ← Mac/Linux: Run to start servers
+```
+setup.bat                   ← Windows: One-click dependency install
+setup.sh                    ← Mac/Linux: One-click dependency install
+
+start-all.bat               ← Windows: Starts both servers
+start-all.sh                ← Mac/Linux: Starts both servers
 ```
 
 ### Folders
 
 ```
-backend/                ← Node.js Express API server
+backend/                    ← Node.js Express API server
   - REST API endpoints
   - Service data management
   - Form handling
   - Lead scoring
+  - .env file (port 5000)
 
-frontend/               ← React web application
+frontend/                   ← React web application
   - 6 pages (Home, Services, Engagement, AI Tools, Blog, Contact)
   - Responsive design
   - Professional styling
   - Form validation
+  - Auto-proxy to backend
 ```
 
 ---
@@ -67,30 +74,57 @@ cd ~/Satyam\ Project
 bash setup.sh
 ```
 
-### Step 2: Start Both Servers
-**Windows:**
+### Step 2: Start Both Servers (IMPORTANT: Backend FIRST!)
+
+⚠️ **Always start the backend BEFORE the frontend!**
+
+**Windows - Terminal 1 (Backend):**
 ```powershell
-start-all.bat
+cd "d:\Satyam Project\backend"
+npm run dev
 ```
 
-**Mac/Linux:**
-```bash
+Wait for: `🚀 AKHB.ai Backend server running on http://localhost:5000`
+
+**Windows - Terminal 2 (Frontend):**
+```powershell
+cd "d:\Satyam Project\frontend"
+npm start
+```
+
+Wait for: `Compiled successfully! ... Local: http://localhost:3000`
+
+**Or use the automated scripts:**
+```powershell
+# Windows: Opens both servers in one go
+start-all.bat
+
+# Mac/Linux:
 bash start-all.sh
 ```
 
-Or manually:
-```bash
-# Terminal 1:
-cd backend && npm run dev
-
-# Terminal 2:
-cd frontend && npm start
-```
-
 ### Step 3: Visit the Website
-Open browser to: **http://localhost:3000**
+Open your browser to: **http://localhost:3000**
 
-**That's it!** Website is running.
+✅ **That's it!** Website is running.
+
+---
+
+## ⚠️ Common Issues on First Run
+
+### Issue: "Proxy error: Could not proxy request..."
+**Cause:** Backend isn't running  
+**Solution:** Start the backend FIRST (see Step 2 above), then start frontend
+
+### Issue: "Port 5000 already in use"
+**Cause:** Another app is using port 5000  
+**Solution:** Close other servers or kill the process on that port
+
+### Issue: Deprecation warnings (fs.F_OK, onAfterSetupMiddleware, util._extend)
+**Cause:** Dependencies use deprecated APIs  
+**Solution:** These are safe to ignore - see [DEPRECATION_WARNINGS.md](DEPRECATION_WARNINGS.md)
+
+For more troubleshooting, see **[SETUP_GUIDE.md](SETUP_GUIDE.md)**
 
 ---
 
