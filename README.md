@@ -2,6 +2,45 @@
 
 A full-stack web application for AKHB.ai, a professional tax and advisory services firm with AI-enabled workflows.
 
+---
+
+## 🚀 Quick Start (5 Minutes)
+
+### Prerequisites
+- Node.js v14+ ([Download](https://nodejs.org))
+- Two terminal windows (backend and frontend run in parallel)
+
+### Setup
+
+```powershell
+# Step 1: Install Dependencies
+cd "d:\Satyam Project"
+cd backend && npm install
+cd ..\frontend && npm install
+
+# Step 2: Start Backend (Terminal 1)
+cd "d:\Satyam Project\backend"
+npm run dev
+# Wait for: "🚀 AKHB.ai Backend server running on http://localhost:5000"
+
+# Step 3: Start Frontend (Terminal 2 - New Window)
+cd "d:\Satyam Project\frontend"
+npm start
+# Browser opens at http://localhost:3000
+```
+
+⚠️ **Important:** Always start the backend FIRST before the frontend!
+
+### Troubleshooting
+
+- **Proxy error / ECONNREFUSED?** → Make sure backend is running in Terminal 1
+- **Port already in use?** → Close other apps or change PORT in backend/.env
+- **Deprecation warnings?** → These are safe to ignore (see DEPRECATION_WARNINGS.md)
+
+📖 **For detailed setup, see [SETUP_GUIDE.md](SETUP_GUIDE.md)**
+
+---
+
 ## Project Structure
 
 ```

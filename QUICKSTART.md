@@ -1,46 +1,68 @@
-# Quick Start Guide
+# Quick Start Guide - AKHB.ai
 
-## Run Everything in 5 Minutes ⚡
+## ⚡ Run Everything in 5 Minutes
 
-### Option 1: Windows PowerShell (Recommended)
+### Prerequisites
+- **Node.js** v14+ installed ([Download](https://nodejs.org))
+- **PowerShell** or **Terminal** access
+- **Two terminal windows** (backend and frontend run in parallel)
 
-Open PowerShell and run:
+---
 
+## 🚀 Setup Steps (Do This Once)
+
+### Step 1: Install All Dependencies
 ```powershell
 cd "d:\Satyam Project"
-
-# Terminal 1: Start Backend
 cd backend
 npm install
-npm run dev
 
-# Terminal 2: Start Frontend (in a new PowerShell window)
-cd "d:\Satyam Project\frontend"
+cd "..\frontend"
 npm install
-npm start
 ```
 
-### Option 2: Using npm commands separately
+✅ Done! Dependencies installed for both backend and frontend.
 
-**Terminal 1 - Backend:**
-```bash
+---
+
+## ▶️ Running the Project
+
+### ⚠️ IMPORTANT: Start Backend FIRST!
+The frontend needs the backend API running. Always follow this order:
+
+### Terminal 1 - Start Backend (Do This First)
+```powershell
 cd "d:\Satyam Project\backend"
-npm install
 npm run dev
 ```
 
-Wait for: `🚀 AKHB.ai Backend server running on http://localhost:5000`
+**Wait for this message:**
+```
+🚀 AKHB.ai Backend server running on http://localhost:5000
+```
 
-**Terminal 2 - Frontend:**
-```bash
+⏸️ **DO NOT proceed until you see this message!**
+
+---
+
+### Terminal 2 - Start Frontend (Open New PowerShell Window)
+```powershell
 cd "d:\Satyam Project\frontend"
-npm install
 npm start
 ```
 
-Wait for: Browser opens at `http://localhost:3000`
+**Wait for this message:**
+```
+Compiled successfully!
+You can now view akhb-frontend in the browser.
+Local: http://localhost:3000
+```
 
-## What You'll See
+✅ Your browser will automatically open to **http://localhost:3000**
+
+---
+
+## ✨ What You'll See
 
 ### Home Page
 - Hero section with AKHB.ai branding

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../styles/App.css';
+import './styles/App.css';
+import Chatbot from './components/Chatbot';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -39,6 +40,9 @@ function App() {
       </main>
       
       <Footer />
+      
+      {/* Chatbot - Visible on all pages */}
+      <Chatbot />
     </div>
   );
 }
@@ -328,7 +332,7 @@ function ContactPage() {
     setError('');
 
     try {
-      const response = await axios.post('/api/engagement/request', formData);
+      await axios.post('/api/engagement/request', formData);
       setSubmitted(true);
       setFormData({
         contact_name: '',
