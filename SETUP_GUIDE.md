@@ -86,53 +86,125 @@ src/
 
 ---
 
-## 🚀 Quick Start (3 Steps)
+## 🚀 Complete Setup Instructions
 
-### Step 1: Install Dependencies
+### Step 1: Prerequisites
+- **Node.js** v14+ ([Download](https://nodejs.org))
+- **npm** v6+ (comes with Node.js)
+- **PowerShell** or **Terminal** access
+- **Two terminal windows** (backend and frontend must run in parallel)
 
-**Option A: Automatic (Windows)**
-```bash
+### Step 2: Install Dependencies (One Time Setup)
+
+```powershell
 cd "d:\Satyam Project"
-setup.bat
-```
-
-**Option B: Manual**
-```bash
-cd "d:\Satyam Project\backend"
+cd backend
 npm install
 
-cd "d:\Satyam Project\frontend"
+cd "..\frontend"
 npm install
 ```
 
-### Step 2: Start Backend
+✅ All dependencies installed!
 
-Open PowerShell and run:
-```bash
+### Step 3: Start Backend First (Terminal 1)
+
+⚠️ **IMPORTANT:** Always start the backend BEFORE the frontend!
+
+```powershell
 cd "d:\Satyam Project\backend"
 npm run dev
 ```
 
-**Expected output:**
+**Wait for:**
 ```
 🚀 AKHB.ai Backend server running on http://localhost:5000
 ```
 
-### Step 3: Start Frontend
+Do NOT continue to the next step until you see this message.
 
-Open another PowerShell and run:
-```bash
+### Step 4: Start Frontend (Terminal 2 - New PowerShell Window)
+
+Once the backend is running, open a NEW PowerShell window and run:
+
+```powershell
 cd "d:\Satyam Project\frontend"
 npm start
 ```
 
-**Expected output:**
+**Wait for:**
 ```
 Compiled successfully!
 You can now view akhb-frontend in the browser.
+Local: http://localhost:3000
 ```
 
-Browser opens automatically at **http://localhost:3000**
+✅ Your browser will automatically open to **http://localhost:3000**
+
+---
+
+## ⚠️ Troubleshooting Common Issues
+
+### Issue: "Proxy error: Could not proxy request... ECONNREFUSED"
+
+**Cause:** The frontend is trying to connect to the backend, but the backend isn't running.
+
+**Solution:**
+1. Make sure you started the backend FIRST
+2. Verify backend shows: `🚀 AKHB.ai Backend server running on http://localhost:5000`
+3. Keep the backend terminal running while using the frontend
+4. Refresh the frontend page in browser
+
+### Issue: "Port 5000 already in use"
+
+**Cause:** Another process is using port 5000.
+
+**Solution:**
+```powershell
+# Find and kill process on port 5000 (Windows)
+netstat -ano | findstr :5000
+taskkill /PID <PID> /F
+
+# Then restart backend
+npm run dev
+```
+
+### Issue: "Port 3000 already in use"
+
+**Cause:** Another process is using port 3000.
+
+**Solution:** Stop any other development servers and try again.
+
+### Issue: "Cannot find module" errors
+
+**Cause:** Dependencies not installed properly.
+
+**Solution:**
+```powershell
+# Clear cache and reinstall
+rm -r node_modules
+rm package-lock.json
+npm install
+```
+
+### Issue: npm command not found
+
+**Cause:** Node.js not installed or not in PATH.
+
+**Solution:** Install Node.js from https://nodejs.org and restart your terminal.
+
+---
+
+## ✅ Verification Checklist
+
+After setup, verify everything works:
+
+- [ ] Backend terminal shows: `🚀 AKHB.ai Backend server running on http://localhost:5000`
+- [ ] Frontend browser shows: Website loads at `http://localhost:3000`
+- [ ] Can click through all pages (Home, Services, Engagement, AI Tools, Blog, Contact)
+- [ ] Can view API health at `http://localhost:5000/api/health`
+- [ ] No red errors in browser console (F12 to open DevTools)
+- [ ] Frontend can fetch data from backend (no "proxy error" messages)
 
 ---
 
